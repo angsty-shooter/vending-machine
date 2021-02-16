@@ -1,7 +1,10 @@
 import ValuesController from "./Controllers/ValuesController.js";
+import VendingController from "./Controllers/vendingController.js";
 
 class App {
 //  valuesController = new ValuesController();
+
+vendingController = new VendingController()
 
 }
 

@@ -1,11 +1,18 @@
-let money = 0
-let change = 0.25
+import { ProxyState } from "../AppState.js"
+import { vendingService } from "../Services/VendingService.js"
 
-function addMoney() {
-    money += change
-    update()
+
+function _draw(){
+    document.getElementById("money").innerText = `${ProxyState.money}`
+
 }
 
-function update() {
-    document.getElementById("money").innerText = `${money}`
+export default class VendingController{
+
+
+addMoney() {
+    vendingService.addMoney()
+    _draw()
+    console.log("hee hee")
+}
 }
