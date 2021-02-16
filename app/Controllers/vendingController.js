@@ -13,6 +13,6 @@ export default class VendingController{
 addMoney() {
     vendingService.addMoney()
     _draw()
-    console.log("hee hee")
+    console.log("*cha-chink*")
 }
 }
